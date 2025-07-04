@@ -1,97 +1,94 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# PokeRub - Desafio Rubcube
 
-# Getting Started
+Projeto para vaga de Frontend Mobile. Uma Pokédex simples para explorar as tecnologias propostas.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+> Referência do desafio:  
+> https://github.com/rubcube/hiring-exercises/blob/master/frontend-mobile/Instructions.md#exerc%C3%ADcio-b-ricky-and-morty-rmapp  
+>  
+> Escolhi o exercício PokeRub por ser mais complexo e permitir demonstrar melhor minhas habilidades.
 
-## Step 1: Start Metro
+---
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Prints e Evidências do Produto Final
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+### Tela Principal (Listagem e Busca)
 
-```sh
-# Using npm
-npm start
+Aqui é possível visualizar a lista completa de Pokémon com barra de busca integrada para filtragem por nome.
 
-# OR using Yarn
-yarn start
-```
+<div align="center">
+  <img src="./print/foto1.jpeg" alt="Tela Principal PokeRub - lista e busca" width="320" />
+  <img src="./print/foto1.1.jpeg" alt="Tela Principal PokeRub - scroll infinito" width="320" />
+</div>
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### Tela de Detalhes do Pokémon
 
-### Android
+Mostra as informações detalhadas do Pokémon selecionado, incluindo tipo, altura, peso, habilidades e cadeia de evolução visual.
 
-```sh
-# Using npm
-npm run android
+<div align="center">
+  <img src="./print/foto2.jpeg" alt="Detalhes do Pokémon no PokeRub" width="350" />
+</div>
 
-# OR using Yarn
-yarn android
-```
+---
 
-### iOS
+### Tela de Favoritos
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+Exibe os Pokémon que o usuário marcou como favoritos para consulta rápida.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+<div align="center">
+  <img src="./print/foto3.jpeg" alt="Tela de Favoritos do PokeRub" width="350" />
+</div>
 
-```sh
-bundle install
-```
+---
 
-Then, and every time you update your native dependencies, run:
+## Como Testar e Rodar a Aplicação
 
-```sh
-bundle exec pod install
-```
+### Pré-requisitos
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+- Node.js (v18 ou superior)
+- npm ou yarn
+- Ambiente React Native configurado para seu sistema operacional (Android Studio / Xcode). Veja o [guia oficial](https://reactnative.dev/docs/environment-setup).
 
-```sh
-# Using npm
-npm run ios
+> Obs: O desafio foi homologado apenas no ambiente Android.
 
-# OR using Yarn
-yarn ios
-```
+---
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+### Instalação
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+1. Clone o repositório.
+2. No terminal, acesse a pasta do projeto e rode:
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
 
-## Step 3: Modify your app
+---
 
-Now that you have successfully run the app, let's make changes!
+### Execução
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+1. Inicie o Metro Bundler:
+    ```bash
+    npm start
+    # ou
+    yarn start
+    ```
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+2. Em outro terminal, rode o app no emulador ou dispositivo:
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+    - Android:
+        ```bash
+        npm run android
+        # ou
+        yarn android
+        ```
+    - iOS (macOS necessário):
+        ```bash
+        npm run ios
+        # ou
+        yarn ios
+        ```
 
-## Congratulations! :tada:
+---
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
